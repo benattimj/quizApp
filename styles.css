@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(29, 0, 53);
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -31,8 +31,7 @@ body {
 }
 
 .btn{
-    background: rgb(171, 201, 247);
-    color: #222;
+    background: rgb(255, 255, 255);
     font-weight: 500;
     width: 100%;
     border: 1 solid #222;
@@ -41,4 +40,24 @@ body {
     text-align: left;
     border-radius: 5px;
     cursor: pointer;
+    transform: all 0.3s;
+    color: #000000;
+}
+
+.btn:hover{
+ background: rgb(0, 0, 0);
+ color: #ffffff;
+}
+
+#next-btn{
+ background-color:rgb(29, 0, 53);
+ color: #ffffff;
+ font-weight: 500;
+ width: 150px;
+ border: 0;
+ padding: 10px;
+ margin: 20px auto 0;
+ border-radius: 4px;
+ cursor: pointer;  
+ display: none; 
 }
