@@ -72,3 +72,24 @@ body {
 .incorrect{
     background: red;
 }
+
+
+/* Media query para dispositivos móveis */
+@media (max-width: 600px) {
+    .app {
+        width: 95%; /* Ajustar largura para preencher mais a tela em dispositivos menores */
+        padding: 15px; /* Reduzir o padding para economizar espaço */
+    }
+
+    .app h1 {
+        font-size: 20px; /* Reduzir um pouco o tamanho da fonte */
+    }
+
+    .btn {
+        padding: 10px; /* Reduzir o padding dos botões */
+    }
+
+    #next-btn {
+        padding: 10px; /* Reduzir o padding do botão 'Next' */
+    }
+}
