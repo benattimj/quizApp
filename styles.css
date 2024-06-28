@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(29, 0, 53);
+}
+
+
+.app {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto 0;
+    border-radius: 30px;
+    padding: 25px;
+
+}
+
+.app h1{
+    font-weight: 25px;
+    color: rgb(29, 0, 53);
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: rgb(29, 0, 53);
+}
+
+.btn{
+    background: rgb(171, 201, 247);
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1 solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
