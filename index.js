@@ -129,24 +129,6 @@ const questions = [
         ]
     },
     {
-        "question": "Qual edge é comumente utilizado na True Homes?",
-        "answers": [
-            { "text": "Island", "correct": false },
-            { "text": "4 x 3 holes", "correct": false },
-            { "text": "bal edge", "correct": false },
-            { "text": "eased", "correct": true }
-        ]
-    },
-    {
-        "question": "Como determinar qual material utilizar?",
-        "answers": [
-            { "text": "Plot Plan", "correct": false },
-            { "text": "Plan", "correct": false },
-            { "text": "StoneApp", "correct": false },
-            { "text": "Selection", "correct": true }
-        ]
-    },
-    {
         "question": "Qual é a função principal da equipe de entrada de dados em uma construtora?",
         "answers": [
             { "text": "Gerenciamento de equipe", "correct": false },
@@ -229,7 +211,16 @@ function selectAnswer(e) {
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `Seu score ${score} de ${questions.length}!`;
+    const totalQuestions = questions.length;
+    const passingScore = 13; // Nota mínima para aprovação
+
+    questionElement.innerHTML = `Seu score é ${score} de ${totalQuestions} perguntas.`;
+    if (score >= passingScore) {
+        questionElement.innerHTML += "<br>Parabéns! Você está aprovado!";
+    } else {
+        questionElement.innerHTML += "<br>Infelizmente, você não atingiu a nota mínima para aprovação.";
+    }
+
     nextButton.innerHTML = "Tente de novo";
     nextButton.style.display = "block";
 }
